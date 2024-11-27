@@ -90,13 +90,28 @@
         <main>
             <article>
                 <section>
-
-                </section>
-                <section>
-
-                </section>
-                <section>
-
+                    <h3 class="titulo">¡Contáctate con nosotros!</h3>
+                    <form action="https://formsubmit.co/verycutekittiesandcats@gmail.com" method="POST" class="formulario">
+                        <fieldset class="campo">
+                            <legend class="subtitulo">Datos</legend>
+                            <div class="campo">
+                                <label for="nombre" class="etiqueta">Nombre*:</label>
+                                <input id="nombre" type="text" name="nombre" placeholder="Ej: Jacinto Ríos" required
+                                    class="entrada">
+                            </div>
+                            <div class="campo">
+                                <label for="email" class="etiqueta">Dirección de correo electrónico*:</label>
+                                <input id="email" type="email" name="email" placeholder="Ej: jacintorios@mail.com"
+                                    required class="entrada">
+                            </div>
+                            <div class="campo">
+                                <label for="mensaje" class="etiqueta">Mensaje*:</label>
+                                <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escriba su mensaje aquí..."
+                                    class="entrada-texto"></textarea>
+                            </div>
+                            <button type="submit" class="boton-enviar">Enviar</button>
+                        </fieldset>
+                    </form>
                 </section>
             </article>
         </main>
