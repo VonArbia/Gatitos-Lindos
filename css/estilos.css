@@ -7,8 +7,12 @@ body {
     min-height: 100vh;
     margin: 0;
     padding: 0;
-    font-family: Cabin, Arial, sans-serif;
-    font-size: 20px;
+    font-family: Cabin, Arial;
+    font-size: 25px;
+}
+.btn-circle{
+    color: #ff6859;
+    font-size: 30px;
 }
 
 h1 {
@@ -35,10 +39,11 @@ h5,
 h6 {
     font-family: "Sour Gummy", cursive;
     color: #ff6859;
+    text-align: center;
 }
 
 #contenido {
-    width: 100%;
+    width: 90%;
     max-width: 960px;
     background-color: #ffded2;
     margin: auto;
@@ -48,8 +53,8 @@ h6 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: justify;
 }
-
 
 
 /* Navbar */
@@ -83,11 +88,16 @@ h6 {
 
 
 /* Contenedor de imágenes */
+
 section img {
-    max-width: 80%;
+    max-width: 70%; /* Reduce el tamaño máximo */
     border-radius: 10px;
-    margin-bottom: 1em;
+    margin: 1em auto; /* Centra la imagen horizontalmente y añade un margen */
     border: 2px solid #ffa478;
+    display: block; /* Necesario para que el margin: auto funcione */
+}
+.banner img{
+    max-width: 100%;
 }
 
 main {
@@ -109,7 +119,6 @@ footer {
 
 footer p {
     margin: 0;
-    font-size: 14px;
 }
 
 /* Formularios */
@@ -160,33 +169,68 @@ footer p {
     color: #fff;
 }
 
-/* Diseño responsive  */
-@media (min-width: 768px) {
-    #contenido {
-        max-width: 720px;
-    }
+
+.banner .carousel-inner {
+    height: 100%; /* O cualquier otra altura que necesites */
+    width: 100vw;
+    overflow: hidden; /* Oculta cualquier contenido que se desborde */
 }
 
-@media (min-width: 1024px) {
+/* Asegurarse de que todos los elementos del carrusel ocupen toda la altura */
+.banner .carousel-item {
+    height: 100%; /* Toma toda la altura del contenedor */
+}
+
+/* Establecer que las imágenes cubran el contenedor sin deformarse */
+.banner .carousel-item img {
+    width: 100%; /* Las imágenes ocupan todo el ancho */
+    height: 100%; /* Las imágenes ocupan toda la altura */
+    object-fit: cover; /* Mantiene la proporción de la imagen y recorta el exceso */
+    transition: object-position 1s ease-in-out; /* Añade transición suave a la imagen */
+}
+
+.galeria .carousel-inner{
+    height: 500px; /* O cualquier otra altura que necesites */
+    width: 889px;
+    overflow: hidden; /* Oculta cualquier contenido que se desborde */
+}
+
+/* Asegurarse de que todos los elementos del carrusel ocupen toda la altura */
+.galeria .carousel-item{
+    height: 100%; /* Toma toda la altura del contenedor */
+}
+
+/* Establecer que las imágenes cubran el contenedor sin deformarse */
+.galeria.carousel-item img {
+    width: 100%; /* Las imágenes ocupan todo el ancho */
+    height: 100%; /* Las imágenes ocupan toda la altura */
+    object-fit: cover; /* Mantiene la proporción de la imagen y recorta el exceso */
+    transition: object-position 1s ease-in-out; /* Añade transición suave a la imagen */
+}
+* {
+    box-sizing: border-box;
+}
+
+
+@media (min-width: 960px) {
     /* Navbar y Footer de ancho completo */
     #contenido{
+        width: 70%;
         max-width: 1000px;
+        margin: auto;
     }
     .navbar,
     footer {
         padding: 20px 50px;
         box-sizing: border-box;
     }
-
-    footer p {
-        font-size: 16px;
-    }
-
-    /* Ajustes para tarjetas e imágenes */
-    .tarjeta-index {
-        width: 70%;
-    }
-    section img {
+    .texto-index p {
         width: 60%;
-    }
+        margin: auto;
+        padding: 2em;
+        }
+
+   
+
+
 }
