@@ -1,0 +1,192 @@
+/* Estilos generales */
+body {
+    background-color: #ffded2;
+    color: #33192d;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: Cabin, Arial, sans-serif;
+    font-size: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    text-align: center;
+    margin: 0.5em 0;
+
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 1.8em;
+    margin: 0.8em 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Sour Gummy", cursive;
+    color: #ff6859;
+}
+
+#contenido {
+    width: 100%;
+    max-width: 960px;
+    background-color: #ffded2;
+    margin: auto;
+    border-radius: 15px;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/* Navbar */
+.navbar {
+    background-color: #33192d;
+    color: #ffded2;
+    font-family: "Sour Gummy";
+    font-size: 1.2em;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #ffded2;
+    margin: 0 10px;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+
+
+/* Contenedor de imágenes */
+section img {
+    max-width: 80%;
+    border-radius: 10px;
+    margin-bottom: 1em;
+    border: 2px solid #ffa478;
+}
+
+main {
+    margin: 1em;
+    padding-top: 70px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #33192d;
+    color: #ffded2;
+    padding: 15px 20px;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Formularios */
+.formulario {
+    max-width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffcab5;
+    border-radius: 8px;
+    color: #8e0107;
+}
+
+.campo {
+    margin-bottom: 15px;
+}
+
+.etiqueta {
+    font-weight: bold;
+    color: #8e0107;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.entrada,
+.entrada-texto {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ba7e36;
+    border-radius: 5px;
+    background-color: #fff5e1;
+    color: #400000;
+}
+
+.boton-enviar {
+    width: 100%;
+    padding: 10px;
+    background-color: #ba7e36;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.boton-enviar:hover {
+    background-color: #8b1d33;
+    color: #fff;
+}
+
+/* Diseño responsive  */
+@media (min-width: 768px) {
+    #contenido {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 1024px) {
+    /* Navbar y Footer de ancho completo */
+    #contenido{
+        max-width: 1000px;
+    }
+    .navbar,
+    footer {
+        padding: 20px 50px;
+        box-sizing: border-box;
+    }
+
+    footer p {
+        font-size: 16px;
+    }
+
+    /* Ajustes para tarjetas e imágenes */
+    .tarjeta-index {
+        width: 70%;
+    }
+    section img {
+        width: 60%;
+    }
+}
