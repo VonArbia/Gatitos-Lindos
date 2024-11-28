@@ -55,6 +55,18 @@ h6 {
     justify-content: center;
     text-align: justify;
 }
+.card {
+    background-color: #e4a04d;
+}
+
+.card h5, .card h6 {
+    text-align: left;
+}
+.card-title{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
 
 
 /* Navbar */
@@ -209,8 +221,8 @@ footer p {
 }
 
 .galeria .carousel-inner{
-    height: 500px; /* O cualquier otra altura que necesites */
-    width: 889px;
+    height: 300px; /* O cualquier otra altura que necesites */
+    width: 533px;
     overflow: hidden; /* Oculta cualquier contenido que se desborde */
 }
 
@@ -249,7 +261,11 @@ footer p {
         
         }
 
-   
+        .galeria .carousel-inner{
+            height: 500px; /* O cualquier otra altura que necesites */
+            width: 889px;
+            overflow: hidden; /* Oculta cualquier contenido que se desborde */
+        }
 
 
 }
