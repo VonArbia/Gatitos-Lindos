@@ -1,12 +1,4 @@
-/* Reset básico */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 /* Estilos generales */
-
 
 body {
     background-color: #ffded2;
@@ -17,7 +9,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Cabin, Arial;
-    font-size: 26px;
+    font-size: 24px;
     /* Tamaño base relativo */
     padding-top: 2.5em;
     /* Para evitar superposición con navbar */
@@ -58,13 +50,14 @@ h6 {
     text-align: center;
 }
 
-#contenido {
-    width: 90%;
+#contenido,
+.contenido {
+    width: 100%;
     background-color: #ffded2;
     margin: 0.5em auto;
     border-radius: 15px;
     padding: 1em;
-    text-align: justify;
+    text-align: left;
     max-width: 100%;
     overflow-x: hidden;
     /* Previene desbordes */
@@ -104,13 +97,13 @@ h6 {
 .navbar a {
     text-decoration: none;
     color: #ffded2 !important;
-    margin: 0 10px;
-    font-size: 1.2em;
+    margin: 0 4px;
+    font-size: 1em;
 }
 
 .navbar-brand {
     font-weight: 700;
-    font-size: 1.6em !important;
+    text-align: left;
 }
 
 
@@ -145,8 +138,28 @@ section img {
     /* Necesario para que el margin: auto funcione */
 }
 
+.banner {
+    width: 100vw;
+    /* Ocupa todo el ancho del viewport */
+    position: relative;
+    /* Necesario para usar child positioning */
+    overflow: hidden;
+    /* Asegura que no haya desbordes */
+    height: auto;
+    /* La altura será definida por el contenido */
+    margin: -2em -20px;
+    margin-top: -3em;
+}
+
 .banner img {
-    min-width: 100%;
+    width: 100%;
+    /* La imagen ocupa todo el ancho del contenedor */
+    height: 100%;
+    /* La imagen ocupa todo el alto del contenedor */
+    object-fit: contain;
+    /* Muestra toda la imagen dentro del espacio disponible */
+    display: block;
+    /* Elimina espacio extra debajo de la imagen */
 }
 
 main {
@@ -276,56 +289,92 @@ footer p {
     font-weight: bolder !important;
 }
 
-/* Media Queries para dispositivos móviles */
-@media (max-width: 768px) {
-    html {
-        font-size: 14px;
-        /* Reduce el tamaño base */
-    }
 
-    #contenido {
-        width: 95%;
-        /* Más ancho en móviles */
-        margin: 0 auto;
-    }
-
-    .galeria .carousel-inner {
-        height: 200px;
-        /* Altura ajustada para móviles */
-        width: 100%;
-        /* Uso de ancho completo */
-    }
-
-    .navbar {
-        flex-direction: column;
-        /* Organiza verticalmente en pantallas pequeñas */
-        padding: 10px 15px;
-        /* Reducir el padding */
-    }
-
-    .nav-link {
-        font-size: 1.2rem;
-        /* Ajusta tamaño de fuentes */
-        margin: 5px 0;
-        /* Espaciado uniforme */
-    }
-
-    footer {
-        padding: 10px;
-        /* Menos padding en móviles */
-    }
+html {
+    font-size: 14px;
+    /* Reduce el tamaño base */
 }
 
+#contenido {
+    width: 95%;
+    /* Más ancho en móviles */
+    margin: 0 auto;
+}
+
+.galeria .carousel-inner {
+    height: 200px;
+    /* Altura ajustada para móviles */
+    width: 100%;
+    /* Uso de ancho completo */
+}
+
+.navbar {
+    flex-direction: column;
+    /* Organiza verticalmente en pantallas pequeñas */
+    padding: 10px 15px;
+    /* Reducir el padding */
+}
+
+.nav-link {
+    font-size: 1.2rem;
+    /* Ajusta tamaño de fuentes */
+    margin: 5px 0;
+    /* Espaciado uniforme */
+}
+
+footer {
+    padding: 10px;
+    /* Menos padding en móviles */
+}
+
+
+header{
+    margin-bottom: -4em;
+    padding: 0;
+}
+iframe{
+    width: 100%;
+    height: auto;
+}
+
+
+
+
 @media (min-width: 960px) {
-    
-    #contenido {
+    body {
+        font-size: 20px;
+    }
+    header{
+        margin-bottom: 0;
+        padding: 0;
+    }
+
+    #contenido,
+    .contenido {
         width: 70%;
-        max-width: 1000px;
+        /* Reduce el ancho al 70% */
         margin: auto;
+        /* Centra el contenido horizontalmente */
+        text-align: justify;
+
     }
 
     .navbar,
-    footer { 
-        padding: 20px 50px;
+    footer {
+        padding: 20px 30px;
+        /* Ajusta los paddings */
+    }
+
+    .navbar a {
+        text-decoration: none;
+        color: #ffded2 !important;
+        margin: 0 5px;
+        font-size: 1.2em;
+    }
+
+    .navbar-brand {
+        margin-top: -7px !important;
+        margin-right: 1em !important;
+        font-size: 1.6em !important;
     }
 }
