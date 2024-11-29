@@ -63,8 +63,19 @@ h6 {
     /* Previene desbordes */
 }
 
+.btn-primary{
+    background-color: #ff6859;
+    color: #8b1d33;
+    border: #ff6859;
+}
+.btn-primary:hover{
+    background-color: #8b1d33;
+    color: #ffded2;
+}
+
+
 .card {
-    background-color: #e4a04d;
+    background-color: #ffa478;
 }
 
 .card h5,
@@ -76,6 +87,27 @@ h6 {
     text-align: center;
     font-size: 1.4em;
     font-weight: bold;
+}
+
+.nav.nav-underline .nav-item h2 {
+    font-size: 1em; /* Ajusta el tamaño de los títulos */
+    margin: 0; /* Opcional: elimina márgenes si necesario */
+}
+
+.nav.nav-underline .nav-item .nav-link {
+    font-size: 1.2em; /* Ajusta el tamaño de los enlaces */
+    text-decoration: none; /* Opcional: elimina subrayados */
+    color: #33192d; /* Cambia el color del texto */
+}
+
+.nav.nav-underline .nav-item .nav-link.active {
+    font-weight: bold; /* Resalta el enlace activo */
+    color: #ff6859; /* Opcional: color diferente para el activo */
+}
+
+.nav.nav-underline .nav-item h2 a:hover {
+    color: #8b1d33; /* Opcional: color en hover */
+    text-decoration: underline; /* Opcional: efecto al pasar el cursor */
 }
 
 /* Navbar */
@@ -332,12 +364,37 @@ header{
     margin-bottom: -4em;
     padding: 0;
 }
-iframe{
-    width: 100%;
-    height: auto;
+iframe {
+    display: block; /* Permite centrar usando margin */
+    margin: auto; /* Centra horizontalmente */
+    width: 100%; /* Se adapta al ancho del contenedor */
+    max-width: 100%; /* Evita que se salga del contenedor */
+    height: auto; /* Mantiene proporciones si es posible */
+    border: none; /* Elimina bordes */
 }
 
+iframe {
+    display: block; /* Centra usando margin */
+    margin: auto; /* Centra horizontalmente */
+    width: 100%; /* Ocupa el ancho disponible */
+    height: auto; /* Mantiene proporciones en móviles */
+    max-width: 100%; /* Evita que se salga del contenedor */
+    border: none; /* Elimina bordes */
+}
 
+/* Contenedor flexible para proporciones */
+.iframe-container {
+    position: relative;
+    width: 100%; /* Ocupa todo el ancho disponible */
+    max-width: 800px; /* Ancho máximo en desktop */
+    margin: auto; /* Centra horizontalmente */
+    aspect-ratio: 16 / 9; /* Mantiene proporción 16:9 */
+    overflow: hidden; /* Oculta desbordes */
+}
+
+.advertencia{
+    color:red
+}
 
 
 @media (min-width: 960px) {
@@ -377,4 +434,21 @@ iframe{
         margin-right: 1em !important;
         font-size: 1.6em !important;
     }
+
+    section img{
+        max-height: 400px;
+        
+    }
+    .galeria .carousel-inner {
+        height: auto; /* Define una altura máxima para pantallas grandes */
+    }
+    iframe {
+        height: 450px; /* Define una altura mínima para desktop */
+    }
+
+    .iframe-container {
+        max-width: 1000px; /* Permite más espacio horizontal */
+        height: auto; /* Ajusta automáticamente */
+    }
+
 }
