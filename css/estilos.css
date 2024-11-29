@@ -15,6 +15,11 @@ body {
     /* Para evitar superposición con navbar */
 }
 
+canvas {
+    display: block;
+  }
+  
+
 .btn-circle {
     color: #ff6859;
     font-size: 2em;
