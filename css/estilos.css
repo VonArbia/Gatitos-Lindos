@@ -17,8 +17,8 @@ body {
 
 canvas {
     display: block;
-  }
-  
+}
+
 
 .btn-circle {
     color: #ff6859;
@@ -68,12 +68,13 @@ h6 {
     /* Previene desbordes */
 }
 
-.btn-primary{
+.btn-primary {
     background-color: #ff6859;
     color: #8b1d33;
     border: #ff6859;
 }
-.btn-primary:hover{
+
+.btn-primary:hover {
     background-color: #8b1d33;
     color: #ffded2;
 }
@@ -96,24 +97,33 @@ h6 {
 }
 
 .nav.nav-underline .nav-item h2 {
-    font-size: 1em; /* Ajusta el tamaño de los títulos */
-    margin: 0; /* Opcional: elimina márgenes si necesario */
+    font-size: 1em;
+    /* Ajusta el tamaño de los títulos */
+    margin: 0;
+    /* Opcional: elimina márgenes si necesario */
 }
 
 .nav.nav-underline .nav-item .nav-link {
-    font-size: 1.2em; /* Ajusta el tamaño de los enlaces */
-    text-decoration: none; /* Opcional: elimina subrayados */
-    color: #33192d; /* Cambia el color del texto */
+    font-size: 1.2em;
+    /* Ajusta el tamaño de los enlaces */
+    text-decoration: none;
+    /* Opcional: elimina subrayados */
+    color: #33192d;
+    /* Cambia el color del texto */
 }
 
 .nav.nav-underline .nav-item .nav-link.active {
-    font-weight: bold; /* Resalta el enlace activo */
-    color: #ff6859; /* Opcional: color diferente para el activo */
+    font-weight: bold;
+    /* Resalta el enlace activo */
+    color: #ff6859;
+    /* Opcional: color diferente para el activo */
 }
 
 .nav.nav-underline .nav-item h2 a:hover {
-    color: #8b1d33; /* Opcional: color en hover */
-    text-decoration: underline; /* Opcional: efecto al pasar el cursor */
+    color: #8b1d33;
+    /* Opcional: color en hover */
+    text-decoration: underline;
+    /* Opcional: efecto al pasar el cursor */
 }
 
 /* Navbar */
@@ -366,39 +376,89 @@ footer {
 }
 
 
-header{
+header {
     margin-bottom: -4em;
     padding: 0;
 }
+
 iframe {
-    display: block; /* Permite centrar usando margin */
-    margin: auto; /* Centra horizontalmente */
-    width: 100%; /* Se adapta al ancho del contenedor */
-    max-width: 100%; /* Evita que se salga del contenedor */
-    height: auto; /* Mantiene proporciones si es posible */
-    border: none; /* Elimina bordes */
+    display: block;
+    /* Permite centrar usando margin */
+    margin: auto;
+    /* Centra horizontalmente */
+    width: 100%;
+    /* Se adapta al ancho del contenedor */
+    max-width: 100%;
+    /* Evita que se salga del contenedor */
+    height: auto;
+    /* Mantiene proporciones si es posible */
+    border: none;
+    /* Elimina bordes */
 }
 
 /* Contenedor flexible para proporciones */
 .iframe-container {
     position: relative;
-    width: 100%; /* Ocupa todo el ancho disponible */
-    max-width: 800px; /* Ancho máximo en desktop */
-    margin: auto; /* Centra horizontalmente */
-    aspect-ratio: 16 / 9; /* Mantiene proporción 16:9 */
-    overflow: hidden; /* Oculta desbordes */
+    width: 100%;
+    /* Ocupa todo el ancho disponible */
+    max-width: 800px;
+    /* Ancho máximo en desktop */
+    margin: auto;
+    /* Centra horizontalmente */
+    aspect-ratio: 16 / 9;
+    /* Mantiene proporción 16:9 */
+    overflow: hidden;
+    /* Oculta desbordes */
 }
 
-.advertencia{
-    color:red
+.advertencia {
+    color: red
 }
+
+.calculator {
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ff6859;
+    border-radius: 8px;
+    background: #ffcab5;
+    max-width: 400px;
+  }
+  .calculator h3 {
+    margin-top: 0;
+  }
+  .calculator input {
+    width: calc(100% - 24px);
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  .calculator button {
+    background-color: #ffa478;
+    color: #fff;
+    border: #ff6859;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .calculator button:hover {
+    background-color: #8b1d33;
+    color: #ffded2;
+  }
+  .calculator p {
+    margin: 10px 0;
+  }
+
 
 
 @media (min-width: 960px) {
     body {
         font-size: 20px;
     }
-    header{
+
+    header {
         margin-bottom: 0;
         padding: 0;
     }
@@ -432,20 +492,26 @@ iframe {
         font-size: 1.6em !important;
     }
 
-    section img{
+    section img {
         max-height: 400px;
-        
+
     }
+
     .galeria .carousel-inner {
-        height: auto; /* Define una altura máxima para pantallas grandes */
+        height: auto;
+        /* Define una altura máxima para pantallas grandes */
     }
+
     iframe {
-        height: 450px; /* Define una altura mínima para desktop */
+        height: 450px;
+        /* Define una altura mínima para desktop */
     }
 
     .iframe-container {
-        max-width: 1000px; /* Permite más espacio horizontal */
-        height: auto; /* Ajusta automáticamente */
+        max-width: 1000px;
+        /* Permite más espacio horizontal */
+        height: auto;
+        /* Ajusta automáticamente */
     }
 
 }
