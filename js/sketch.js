@@ -39,7 +39,7 @@ function draw() {
     if (estaCorriendo) {
         image(corre, pX, 265, 100, 67);
     } else {
-        image(parado, pX - 10, 255, 125, 86);
+        image(parado, pX - 10, 255, 130, 92);
     }
 
     // Vigilante
