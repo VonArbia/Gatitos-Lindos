@@ -379,15 +379,6 @@ iframe {
     border: none; /* Elimina bordes */
 }
 
-iframe {
-    display: block; /* Centra usando margin */
-    margin: auto; /* Centra horizontalmente */
-    width: 100%; /* Ocupa el ancho disponible */
-    height: auto; /* Mantiene proporciones en móviles */
-    max-width: 100%; /* Evita que se salga del contenedor */
-    border: none; /* Elimina bordes */
-}
-
 /* Contenedor flexible para proporciones */
 .iframe-container {
     position: relative;
