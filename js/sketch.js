@@ -15,14 +15,14 @@ let estaCorriendo = false; // nueva variable para controlar la imagen
 let miauVigiReproducido = false;
 
 function preload() {
-    fondo = loadImage("../img/juego/fondo-parque.jpg");
-    corre = loadImage("../img/juego/gato-corre.gif");
-    parado = loadImage("../img/juego/gato-parado.png");
-    gatoVigiDere = loadImage("../img/juego/gato-vigi-dere.png");
-    gatoVigiIzq = loadImage("../img/juego/gato-vigi-izq.png");
-    miau = loadSound("../audios-juego/miau.wav");
-    musica = loadSound("../audios-juego/8bit-musica.wav");
-    miauVigi = loadSound("../audios-juego/miau-vigi.mp3");
+    fondo = loadImage("./js/juego/img/fondo-parque.jpg");
+    corre = loadImage("./js/juego/img/gato-corre.gif");
+    parado = loadImage("./js/juego/img/gato-parado.png");
+    gatoVigiDere = loadImage("./js/juego/img/gato-vigi-dere.png");
+    gatoVigiIzq = loadImage("./js/juego/img/gato-vigi-izq.png");
+    miau = loadSound("./js/juego/audios-juego/miau.wav");
+    musica = loadSound("./js/juego/audios-juego/8bit-musica.wav");
+    miauVigi = loadSound("./js/juego/audios-juego/miau-vigi.mp3");
 }
 
 function setup() {
