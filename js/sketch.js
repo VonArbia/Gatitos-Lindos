@@ -21,7 +21,7 @@ function preload() {
     gatoVigiDere = loadImage("./js/juego/img/gato-vigi-dere.png");
     gatoVigiIzq = loadImage("./js/juego/img/gato-vigi-izq.png");
     miau = loadSound("./js/juego/audios-juego/miau.wav");
-    musica = loadSound("./js/juego/audios-juego/8bit-musica.wav");
+    musica = loadSound("./js/juego/audios-juego/8bit-musica.mp3");
     miauVigi = loadSound("./js/juego/audios-juego/miau-vigi.mp3");
 }
 
